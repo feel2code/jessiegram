@@ -1,0 +1,86 @@
+{% with request.resolver_match.view_name as view_name %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+         aria-label="Fifth navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'posts:index' %}">
+                {% load static %}
+                <img src="{% static 'img/logo.svg' %}"
+                     width="108"
+                     height="30"
+                     class="d-inline-block align-top"
+                     alt="логотип с собачкой"/>
+            </a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample05"
+                    aria-controls="navbarsExample05"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="col-9"></div>
+            <div class="collapse navbar-collapse" id="navbarsExample05">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               aria-current="page"
+                               href="{% url 'posts:post_create' %}">
+                                {% if view_name == 'posts:post_create' %}
+                                    <img src="{% static 'img/new_post.svg' %}"
+                                         width="30"
+                                         height="30"
+                                         alt="new post button"/>
+                                {% else %}
+                                    <img src="{% static 'img/new_post_inactive.svg' %}"
+                                         width="30"
+                                         height="30"
+                                         alt="new post button"/>
+                                {% endif %}
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle"
+                               {% if view_name == 'posts:profile' %}style="color:white"{% endif %}
+                               href="#"
+                               id="dropdown03"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">@{{ user.username }}</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                                <li>
+                                    <a class="dropdown-item" href="{% url 'posts:profile' user.username %}">Профиль</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{% url 'posts:follow_index' %}">Подписки</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{% url 'posts:group_create' %}">Создать группу</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{% url 'users:password_change' %}">Изменить пароль</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"href="{% url 'users:logout' %}">Выйти</a>
+                                </li>
+                            </ul>
+                        </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               aria-current="page"
+                               {% if view_name == 'users:login' %}style="color:white"{% endif %}
+                               href="{% url 'users:login' %}">Войти</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               aria-current="page"
+                               {% if view_name == 'users:signup' %}style="color:white"{% endif %}
+                               href="{% url 'users:signup' %}">Регистрация</a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% endwith %}

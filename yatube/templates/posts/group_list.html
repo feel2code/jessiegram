@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}
+    {{ group }}
+{% endblock title %}
+{% block content %}
+    {% load thumbnail %}
+    <div class="py-0 custom-background-group">
+        <div class="container py-3">
+            <div class="bg-white box-shadow custom-container-blob">
+                <div class="custom-container-blob80">
+                    <h5 class="px-3 custom-text-left">{{ group }}</h5>
+                    <div class="px-3 custom-text-left custom-all-grey">
+                        <p>
+                            {{ group.description }}
+                        </p>
+                        Постов в группе: {{ page_obj.object_list.count }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-3">
+            <br />
+            <div class="row">
+                {% for post in page_obj %}
+                    <div class="col-md-4">{% include "posts/includes/one_post.html" %}</div>
+                {% endfor %}
+            </div>
+            {% include "posts/includes/paginator.html" %}
+        </div>
+    </div>
+{% endblock content %}

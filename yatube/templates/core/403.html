@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Ошибка 403{% endblock %}
+{% block content %}
+{% load static %}
+<div style="text-align: center">
+  <h1 style="text-align: center">Ошибка 403.</h1>
+  <img src="{% static 'img/doggo.png' %}" alt="Грустная собачулька" height="200" width="200"/>
+  <br>
+  <a href="{% url 'posts:index' %}">Перейти на главную</a>
+</div>
+{% endblock content %}

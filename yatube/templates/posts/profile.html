@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}
+    Профиль {{ username }}
+{% endblock title %}
+{% block content %}
+    {% load thumbnail %}
+    <div class="custom-background-profile">
+        <div class="container py-3">
+            <div class="bg-white box-shadow custom-container-blob">
+                <div class="custom-container-blob80">
+                    <h5 class="px-3 custom-text-left">@{{ username }}</h5>
+                    <div class="px-3 custom-text-left custom-all-grey">
+                        <p>
+                            {{ username.get_full_name }}
+                            <br />
+                            Подписчиков: {{ username.following.count }}
+                            <br />
+                            Подписки: {{ username.follower.count }}
+                            <br />
+                            Постов: {{ post_count }}
+                        </p>
+                    </div>
+                    <div class="px-3 px-3">
+                        {% if user.is_authenticated %}
+                            {% if yourself %}
+                            {% else %}
+                                {% if following %}
+                                    <a class="py-1 btn btn-outline-secondary custom-left-px50"
+                                       href="{% url "posts:profile_unfollow" username %}"
+                                       role="button">
+                                        Отписаться
+                                    </a>
+                                {% else %}
+                                    <a class="py-1 btn btn-outline-secondary custom-left-px50"
+                                       href="{% url "posts:profile_follow" username %}"
+                                       role="button">
+                                        Подписаться
+                                    </a>
+                                {% endif %}
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <br />
+        </div>
+        <div class="container py-3">
+            <div class="row">
+                {% for post in page_obj %}
+                    <div class="col-md-4">{% include "posts/includes/one_post.html" %}</div>
+                {% endfor %}
+                {% include "posts/includes/paginator.html" %}
+            </div>
+        </div>
+    </div>
+{% endblock content %}

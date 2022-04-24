@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% block title %}
+    Пост {{ post|truncatechars:30 }}
+{% endblock title %}
+{% block content %}
+    {% load static %}
+    {% load thumbnail %}
+    {% load user_filters %}
+    <div class="bg-light">
+        <div class="row">
+            {% if post.image %}
+                <div class="col-md-4 py-5">
+                    <div class="bg-white box-shadow mx-auto custom-container-detail">
+                        {% thumbnail post.image "400x400" crop="center" upscale=False as im %}
+                        <a href="{{ post.image.url }}">
+                            <img class="col-12 py-3"
+                                 alt="some pic uploaded by author"
+                                 height=""
+                                 width=""
+                                 src="{{ im.url }}"/>
+                        </a>
+                    {% endthumbnail %}
+                </div>
+            </div>
+        {% endif %}
+        <div class="col-md-4 py-5">
+            <div class="bg-white box-shadow mx-auto position-relative custom-container-detail">
+                <div class="px-3">
+                    <a href="{% url "posts:profile" post.author %}">@{{ post.author }}</a>
+                    {% if post.group %}
+                        <p>
+                            в группе: <a href="{% url "posts:group_list" post.group.slug %}">{{ post.group }}</a>
+                        </p>
+                    {% endif %}
+                    <p class="custom-wrapper">
+                        {{ post.text }}
+                    </p>
+                    <p>
+                        {% if editable %}
+                            <a class="btn btn-outline-secondary"
+                               href="{% url "posts:post_edit" post_id %}">редактировать</a>
+                            <a class="btn btn-outline-secondary"
+                               href="{% url "posts:post_delete" post_id %}">удалить</a>
+                        {% endif %}
+                    </p>
+                </div>
+                <div class="px-3 position-absolute bottom-0 start-0 custom-all-grey">
+                    <p>
+                        <a href="{% url 'posts:add_or_delete_like' post.id %}">
+                            {% if liked %}
+                                <img src="{% static 'img/liked.svg' %}" height="20" width="20" alt="like"/>
+                            {% else %}
+                                <img src="{% static 'img/like.svg' %}" height="20" width="20" alt="like"/>
+                            {% endif %}
+                        </a>
+                            {{ post.likes.count }}
+                        <br/>
+                        комментариев: {{ post.comments.count }}
+                    </p>
+                </div>
+                <div class="row px-3 position-absolute bottom-0 end-0 custom-date">
+                    <p>
+                        {{ post.pub_date|date:"d E Y" }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% for comment in comments %}
+        <br />
+        <div class="bg-white box-shadow mx-auto custom-comment">
+            <div class="px-3">
+                <p>
+                    <a href="{% url "posts:profile" comment.author %}">@{{ comment.author }}</a>
+                    <br />
+                    {{ comment.pub_date|date:"d E Y" }}
+                    <br />
+                    {{ comment.text }}
+                </p>
+            </div>
+        </div>
+        <br />
+    {% endfor %}
+    {% if user.is_authenticated %}
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 card my-4">
+                <h5 class="card-header">Добавить комментарий:</h5>
+                <div class="card-body">
+                    <form method="post" action="{% url "posts:add_comment" post.id %}">
+                        {% csrf_token %}
+                        <div class="form-group mb-2">{{ form.text|addclass:"form-control" }}</div>
+                        <button type="submit" class="btn btn-outline-secondary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    {% endif %}
+</div>
+{% endblock content %}

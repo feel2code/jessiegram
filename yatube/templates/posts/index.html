@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}
+    JessieGram
+{% endblock title %}
+{% block content %}
+    <div class="py-0">
+        <div class="bg-light">
+            <div class="container py-3">
+                {% load cache %}
+                {% cache 20 index_page page_obj %}
+                <div class="row">
+                    {% for post in page_obj %}
+                        <div class="col-md-4">{% include "posts/includes/one_post.html" %}</div>
+                    {% endfor %}
+                </div>
+            {% endcache %}
+            {% include "posts/includes/paginator.html" %}
+        </div>
+    </div>
+</div>
+{% endblock content %}

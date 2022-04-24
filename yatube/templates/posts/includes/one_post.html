@@ -1,0 +1,50 @@
+{% load thumbnail %}
+{% load static %}
+<div class="bg-white box-shadow mx-auto position-relative {% if post.image %}custom-container-image-onepost{% else %}custom-container-wimage-onepost{% endif %}">
+    <div class="row align-self-start">
+        {% thumbnail post.image "300x300" crop="center" upscale=True as im %}
+        <a href="{% url 'posts:post_detail' post.id %}">
+            <img class="col-12 py-3"
+                 alt="some pic uploaded by author"
+                 height=""
+                 width=""
+                 src="{{ im.url }}"/>
+        </a>
+    </div>
+    <div class="row px-3 align-self-center">
+        <a href="{% url 'posts:profile' post.author %}">@{{ post.author }}</a>
+        {% if post.group %}
+            <p>
+                в группе: <a href="{% url 'posts:group_list' post.group.slug %}">{{ post.group }}</a>
+            </p>
+        {% endif %}
+        <p class="custom-wrapper">
+            {{ post.text|truncatechars:80 }}
+        </p>
+    </div>
+    <div class="px-3 position-absolute bottom-0 start-0 custom-all-grey">
+        <p>
+            <a href="{% url 'posts:add_or_delete_like' post.id %}">
+                {% for Like in post.likes.get_queryset %}
+                    {% if user == Like.user %}
+                        <img src="{% static 'img/liked.svg' %}" height="20" width="20" alt="like" />
+                    {% endif %}
+                {% endfor %}
+                liked
+            </a>
+            {{ post.likes.count }}
+            <br />
+            комментариев: {{ post.comments.count }}
+        </p>
+    </div>
+    <div class="row px-3 position-absolute bottom-0 end-0 custom-date">
+        <p>
+            {{ post.pub_date|date:"d E Y" }}
+        </p>
+    </div>
+</div>
+{% if not forloop.last %}
+    <br />
+    <br />
+{% endif %}
+{% endthumbnail %}
