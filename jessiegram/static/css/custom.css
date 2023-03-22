@@ -1,0 +1,137 @@
+/*
+ * group-list
+ */
+
+.custom-background-group {
+    background-color: #e0ebeb;
+}
+
+.custom-container-blob {
+    width: 300px;
+    height: 185px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.custom-container-blob80 {
+    width: 80%;
+    height: 185px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/*
+ * post-detail
+ */
+
+.custom-text-left {
+    text-align: left;
+}
+
+.custom-container-image {
+    width: 300px;
+    height: 700px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.custom-container-wimage {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.custom-container-detail {
+    width: 400px;
+    height: 430px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.custom-comment {
+    width: 400px;
+    height: 130px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.custom-comment-form {
+    width: 100%;
+    height: 40px;
+}
+
+/*
+* profile
+*/
+
+.custom-background-profile {
+    background-color: #e6f5ff;
+}
+
+.custom-left-px50 {
+    left: 50px;
+}
+
+/*
+* margins
+*/
+
+.custom-margin-null {
+    margin: 0px 0px 0px 0px;
+}
+
+/*
+* one-post
+*/
+
+.custom-container-image-onepost {
+    width: 300px;
+    height: 550px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.custom-container-wimage-onepost {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.custom-date {
+    color: grey;
+    text-align: right;
+}
+
+/*
+* header
+*/
+
+.custom-all-white {
+    color: white;
+}
+
+.custom-all-grey {
+    color: grey;
+}
+
+/*
+* word wrapper
+*/
+
+.custom-wrapper {
+    word-wrap: break-word;
+}
+
+/*
+* main background pic
+*/
+
+.main-bg {
+    background-image: url(../img/bg-login.png);
+}
+
+/*
+* footer
+*/
+
+.custom-black {
+    color: black;
+}
+
+.custom-black {
+    color: blue;
+}

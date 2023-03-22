@@ -145,7 +145,5 @@ dmypy.json
 
 .mypy_cache
 
-# media and static dirs
-yatube/media/
-yatube/static/
-
+# media dirs
+jessiegram/media/*
