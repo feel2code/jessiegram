@@ -32,6 +32,8 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     os.getenv('DOMAIN'),
+    os.getenv('ALT_DOMAIN'),
+    os.getenv('IP_DOMAIN')
 ]
 
 INTERNAL_IPS = [
