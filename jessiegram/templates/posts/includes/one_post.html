@@ -24,17 +24,17 @@
     </div>
     <div class="px-3 position-absolute bottom-0 start-0 custom-all-grey">
         <p>
-            <a href="{% url 'posts:add_or_delete_like' post.id %}">
-                {% for Like in post.likes.get_queryset %}
-                    {% if user == Like.user %}
-                        <img src="{% static 'img/liked.svg' %}" height="20" width="20" alt="like" />
-                    {% endif %}
-                {% endfor %}
-                liked
-            </a>
-            {{ post.likes.count }}
+{#            <a href="{% url 'posts:add_or_delete_like' post.id %}">#}
+{#                {% for Like in post.likes.get_queryset %}#}
+{#                    {% if user == Like.user %}#}
+{#                        <img src="{% static 'img/liked.svg' %}" height="20" width="20" alt="like" />#}
+{#                    {% endif %}#}
+{#                {% endfor %}#}
+{#                лайков: #}
+{#            </a>#}
+            лайков: {{ post.likes.count }}
             <br />
-            комментариев: {{ post.comments.count }}
+            комментов: {{ post.comments.count }}
         </p>
     </div>
     <div class="row px-3 position-absolute bottom-0 end-0 custom-date">
