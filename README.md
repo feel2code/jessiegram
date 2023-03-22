@@ -7,7 +7,13 @@
     Also you can follow authors which posts you like.<br>
     Feel free to use <a href="http://jessiegram.ru">JessieGram</a>!<br>
 </h4>
-
+<h4 align="center"> 
+    "Jessiegram" – это проект, созданный на платформе Django,<br>
+    Зарегистрироваться, создавать посты со своими питомцами,<br>
+    комментировать другие сообщения и лайкать сообщения.<br>
+    Также вы можете следить за авторами, чьи посты вам нравятся.<br>
+    Не стесняйтесь использовать JessieGram!<br>
+</h4>
 <p align="center">
     <a href="https://python.org">
         <img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python">
