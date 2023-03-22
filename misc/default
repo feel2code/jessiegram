@@ -1,0 +1,17 @@
+server {
+    listen 80;
+    server_name <ip>;
+
+    location /static/ {
+        root /root/jessiegram/jessiegram/;
+    }
+
+    location /media/ {
+        root /root/jessiegram/jessiegram/;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://127.0.0.1:8000;
+    }
+}

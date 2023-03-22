@@ -9,6 +9,7 @@ djlint==0.7.6
 exceptiongroup==1.1.1
 Faker==12.0.1
 flake8==4.0.1
+gunicorn==20.1.0
 idna==3.3
 importlib-metadata==4.11.3
 iniconfig==1.1.1
