@@ -48,11 +48,8 @@
                     <p>
                         <a href="{% url 'posts:add_or_delete_like' post.id %}">
                             {% if liked %}
-                                <img src="{% static 'img/liked.svg' %}" height="20" width="20" alt="like"/>
-                            {% else %}
-                                <img src="{% static 'img/like.svg' %}" height="20" width="20" alt="like"/>
-                            {% endif %}
-                        </a>
+                                <img src="{% static 'img/liked.svg' %}" height="20" width="20" alt="like"/>{% else %}
+                                <img src="{% static 'img/like.svg' %}" height="20" width="20" alt="like"/>{% endif %}</a>
                             {{ post.likes.count }}
                         <br/>
                         комментариев: {{ post.comments.count }}
