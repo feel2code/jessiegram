@@ -1,18 +1,19 @@
+{% load i18n %}
 <div class="row">
     <div class="col-6 col-md">
-        <p >
+        <p>
             © 2021 - {{ year }} Copyright <span class="custom-black"><a class="text-muted" href="{% url 'posts:index' %}">JessieGram</a></span><br>
             Developed by <a href="https://github.com/feel2code">feel2code</a>
         </p>
     </div>
     <div class="col-6 col-md">
-        <h5>Подробности</h5>
+        <h5>{% trans 'Additional information' %}</h5>
         <ul class="list-unstyled text-small">
             <li>
-                <a class="text-muted" href="{% url 'about:tech' %}">Технологии</a>
+                <a class="text-muted" href="{% url 'about:tech' %}">{% trans 'Techs' %}</a>
             </li>
             <li>
-                <a class="text-muted custom-blue" href="https://www.t.me/feel2code">Контакты</a>
+                <a class="text-muted custom-blue" href="https://www.t.me/feel2code">{% trans 'Contacts' %}</a>
             </li>
         </ul>
     </div>

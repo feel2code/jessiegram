@@ -1,21 +1,22 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% block title %}
-    Войти
+{% trans 'Login' %}
 {% endblock title %}
 {% block content %}
     <div class="row justify-content-center main-bg">
         <div class="col-md-3 p-5">
             <div class="card">
-                <div class="card-header">Войти на сайт</div>
+                <div class="card-header">{% trans 'Login to the site' %}</div>
                 <div class="card-body">
                     {% include 'users/includes/form_errors.html' %}
                     <form method="post"
                           {% if action_url %} action="{% url action_url %}" {% endif %}>
                         {% csrf_token %}
                         {% include 'users/includes/form.html' %}
-                            <button type="submit" class="btn btn-outline-secondary">Войти</button>
+                            <button type="submit" class="btn btn-outline-secondary">{% trans 'Login' %}</button>
                             <a href="{% url 'users:password_reset' %}"
-                               class="btn btn-outline-secondary">Забыли пароль?</a>
+                               class="btn btn-outline-secondary">{% trans 'Forgot password?' %}</a>
                     </form>
                 </div>
                 <!-- card body -->

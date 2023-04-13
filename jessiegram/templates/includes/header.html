@@ -1,4 +1,5 @@
 {% with request.resolver_match.view_name as view_name %}
+    {% load i18n %}
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
          aria-label="Fifth navbar example">
         <div class="container-fluid">
@@ -8,7 +9,7 @@
                      width="108"
                      height="30"
                      class="d-inline-block align-top"
-                     alt="логотип с собачкой"/>
+                     alt={% trans 'Logo.with.a.dog' %}/>
             </a>
             <button class="navbar-toggler"
                     type="button"
@@ -19,7 +20,17 @@
                     aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="col-9"></div>
+                {% get_available_languages as LANGUAGES %}
+                {% for lang in LANGUAGES %}
+                {% if LANGUAGE_CODE == lang.0 %}
+                    <div class="nav-link custom-all-white small">{{lang.0.upper}}</div>
+                {% else %}
+                    <div class="nav-link small" >
+                        <a href="{% url 'posts:set_language' %}?l={{lang.0}}">{{lang.0.upper}}</a>
+                    </div>
+                {% endif %} |
+                {% endfor %}
+            <div class="col-6"></div>
             <div class="collapse navbar-collapse" id="navbarsExample05">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     {% if user.is_authenticated %}
@@ -49,19 +60,19 @@
                                aria-expanded="false">@{{ user.username }}</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown03">
                                 <li>
-                                    <a class="dropdown-item" href="{% url 'posts:profile' user.username %}">Профиль</a>
+                                    <a class="dropdown-item" href="{% url 'posts:profile' user.username %}">{% trans 'Account' %}</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="{% url 'posts:follow_index' %}">Подписки</a>
+                                    <a class="dropdown-item" href="{% url 'posts:follow_index' %}">{% trans 'Subscriptions' %}</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="{% url 'posts:group_create' %}">Создать группу</a>
+                                    <a class="dropdown-item" href="{% url 'posts:group_create' %}">{% trans 'Create group' %}</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="{% url 'users:password_change' %}">Изменить пароль</a>
+                                    <a class="dropdown-item" href="{% url 'users:password_change' %}">{% trans 'Change password' %}</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item"href="{% url 'users:logout' %}">Выйти</a>
+                                    <a class="dropdown-item" href="{% url 'users:logout' %}">{% trans 'Logout' %}</a>
                                 </li>
                             </ul>
                         </li>
@@ -70,13 +81,13 @@
                             <a class="nav-link"
                                aria-current="page"
                                {% if view_name == 'users:login' %}style="color:white"{% endif %}
-                               href="{% url 'users:login' %}">Войти</a>
+                               href="{% url 'users:login' %}">{% trans 'Sign in' %}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
                                aria-current="page"
                                {% if view_name == 'users:signup' %}style="color:white"{% endif %}
-                               href="{% url 'users:signup' %}">Регистрация</a>
+                               href="{% url 'users:signup' %}">{% trans 'Sign up' %}</a>
                         </li>
                     {% endif %}
                 </ul>

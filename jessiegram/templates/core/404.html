@@ -1,12 +1,13 @@
 {% extends "base.html" %}
-{% block title %}Ошибка 404{% endblock %}
+{% load i18n %}
+{% block title %}{% trans 'Error' %} 404{% endblock %}
 {% block content %}
 {% load static %}
 <div style="text-align: center">
-  <h1 style="text-align: center">Ошибка 404</h1>
-  <p style="text-align: center">Страницы с адресом {{ path }} не существует</p>
-  <img src="{% static 'img/doggo.png' %}" alt="Грустная собачулька" height="200" width="200"/>
+  <h1 style="text-align: center">{% trans 'Error' %} 404</h1>
+  <p style="text-align: center">{% trans 'Page' %} {{ path }} {% trans 'not exists' %}</p>
+  <img src="{% static 'img/doggo.png' %}" alt={% trans 'Logo.with.a.dog' %} height="200" width="200"/>
   <br>
-  <a href="{% url 'posts:index' %}">Перейти на главную</a>
+  <a href="{% url 'posts:index' %}">{% trans 'Main page' %}</a>
 </div>
 {% endblock content %}

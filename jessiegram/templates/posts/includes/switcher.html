@@ -1,18 +1,19 @@
 {% with request.resolver_match.view_name as view_name %}
+    {% load i18n %}
     {% if user.is_authenticated %}
         <ul class="navbar navbar-expand-lg navbar-dark bg-dark nav-tabs custom-margin-null">
             <li class="nav-item">
                 <a class="nav-link"
                    {% if view_name == 'posts:index' %}style="color:white"{% else %}style="color:grey"{% endif %}
                    href="{% url 'posts:index' %}">
-                    Все авторы
+                    {% trans 'All authors' %}
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link"
                    {% if view_name == 'posts:follow_index' %}style="color:white"{% else %}style="color:grey"{% endif %}
                    href="{% url 'posts:follow_index' %}">
-                    Подписки
+                    {% trans 'Subscriptions' %}
                 </a>
             </li>
         </ul>

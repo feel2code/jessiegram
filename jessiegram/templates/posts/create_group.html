@@ -1,19 +1,20 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% block title %}
-    Новая группа
+{% trans 'New group' %}
 {% endblock title %}
 {% block content %}
     <div class="row justify-content-center main-bg">
         <div class="col-md-5 p-5">
             <div class="card">
-                <div class="card-header">Создать группу</div>
+                <div class="card-header">{% trans 'Create group' %}</div>
                 <div class="card-body">
                     {% include 'users/includes/form_errors.html' %}
                     <form method="post"
                           {% if action_url %} action="{% url action_url %}" {% endif %}>
                         {% csrf_token %}
                         {% include 'users/includes/form.html' %}
-                            <button type="submit" class="btn btn-outline-secondary">Создать группу</button>
+                            <button type="submit" class="btn btn-outline-secondary">{% trans 'Create group' %}</button>
                     </form>
                 </div>
                 <!-- card body -->

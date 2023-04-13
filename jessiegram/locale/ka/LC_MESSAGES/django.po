@@ -1,0 +1,334 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-13 17:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: feel2code <nabiullinfa@gmail.ru>\n"
+"Language-Team: feel2code <nabiullinfa@gmail.ru>\n"
+"Language: KA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: jessiegram/settings.py:145
+msgid "English"
+msgstr "ინგლისური"
+
+#: jessiegram/settings.py:146
+msgid "Russian"
+msgstr "რუსული"
+
+#: jessiegram/settings.py:147
+msgid "Georgian"
+msgstr "ქართული"
+
+#: templates/about/tech.html:3 templates/includes/footer.html:13
+msgid "Techs"
+msgstr "ტექნოლოგიები"
+
+#: templates/base.html:27
+msgid "No content :("
+msgstr "კონტენტი დროებით აკლია :("
+
+#: templates/core/403.html:3 templates/core/403.html:7
+#: templates/core/403csrf.html:3 templates/core/403csrf.html:7
+#: templates/core/404.html:3 templates/core/404.html:7
+#: templates/core/500.html:3 templates/core/500.html:7
+#: templates/users/password_reset_confirm.html:54
+msgid "Error"
+msgstr "შეცდომა"
+
+#: templates/core/403.html:8 templates/core/403csrf.html:8
+#: templates/core/404.html:9 templates/core/500.html:8
+#: templates/includes/header.html:12
+msgid "Logo.with.a.dog"
+msgstr "ძაღლის ლოგო"
+
+#: templates/core/403.html:10 templates/core/403csrf.html:10
+#: templates/core/404.html:11 templates/core/500.html:10
+msgid "Main page"
+msgstr "მთავარი"
+
+#: templates/core/404.html:8
+msgid "Page"
+msgstr "გვერდი"
+
+#: templates/core/404.html:8
+msgid "not exists"
+msgstr "არ არსებობს"
+
+#: templates/includes/footer.html:10
+msgid "Additional information"
+msgstr "დეტალები"
+
+#: templates/includes/footer.html:16
+msgid "Contacts"
+msgstr "კონტაქტები"
+
+#: templates/includes/header.html:63 templates/posts/profile.html:4
+msgid "Account"
+msgstr "პროფილი"
+
+#: templates/includes/header.html:66 templates/posts/includes/switcher.html:16
+msgid "Subscriptions"
+msgstr "გამოწერები"
+
+#: templates/includes/header.html:69 templates/posts/create_group.html:10
+#: templates/posts/create_group.html:17
+msgid "Create group"
+msgstr "ჯგუფის შექმნა"
+
+#: templates/includes/header.html:72
+#: templates/users/password_change_form.html:3
+#: templates/users/password_change_form.html:10
+#: templates/users/password_change_form.html:47
+msgid "Change password"
+msgstr "პაროლის შეცვლა"
+
+#: templates/includes/header.html:75
+msgid "Logout"
+msgstr "გასვლა"
+
+#: templates/includes/header.html:84
+msgid "Sign in"
+msgstr "შესვლა"
+
+#: templates/includes/header.html:90 templates/users/signup.html:10
+#: templates/users/signup.html:17
+msgid "Sign up"
+msgstr "დარეგისტრირება"
+
+#: templates/posts/create_group.html:4
+msgid "New group"
+msgstr "ახალი ჯგუფი"
+
+#: templates/posts/create_post.html:4
+msgid "Create new post"
+msgstr "პოსტის შექმნა"
+
+#: templates/posts/create_post.html:13
+msgid "Submit post"
+msgstr "გამოქვეყნება"
+
+#: templates/posts/create_post.html:15
+msgid "Edit post"
+msgstr "პოსტის რედაქტირება"
+
+#: templates/posts/create_post.html:24
+msgid "Text:"
+msgstr "ტექსტი:"
+
+#: templates/posts/create_post.html:42
+msgid "Add record"
+msgstr "შეყვანის დამატება"
+
+#: templates/posts/create_post.html:44
+msgid "Save"
+msgstr "შენახვა"
+
+#: templates/posts/follow.html:4
+msgid "Followers"
+msgstr "აბონენტები"
+
+#: templates/posts/group_list.html:18
+msgid "Posts in the group:"
+msgstr "პოსტები ჯგუფში:"
+
+#: templates/posts/includes/one_post.html:19
+#: templates/posts/post_detail.html:33
+msgid "In the group:"
+msgstr "პოსტები ჯგუფში:"
+
+#: templates/posts/includes/one_post.html:36
+msgid "liked:"
+msgstr "ჯგუფში:"
+
+#: templates/posts/includes/one_post.html:38
+msgid "commented:"
+msgstr "მოწონს:"
+
+#: templates/posts/includes/paginator.html:6
+msgid "First"
+msgstr "პირველი"
+
+#: templates/posts/includes/paginator.html:9
+msgid "Previous"
+msgstr "წინა"
+
+#: templates/posts/includes/paginator.html:27
+msgid "Next"
+msgstr "შემდეგი"
+
+#: templates/posts/includes/paginator.html:32
+msgid "Last"
+msgstr "ბოლო"
+
+#: templates/posts/includes/switcher.html:9
+msgid "All authors"
+msgstr "ყველა ავტორი"
+
+#: templates/posts/post_detail.html:4
+msgid "Post"
+msgstr "პოსტი"
+
+#: templates/posts/post_detail.html:42
+msgid "Edit"
+msgstr "რედაქტირება"
+
+#: templates/posts/post_detail.html:44
+msgid "Delete"
+msgstr "წაშლა"
+
+#: templates/posts/post_detail.html:56
+msgid "Comments"
+msgstr "კომენტარები"
+
+#: templates/posts/post_detail.html:86
+msgid "Add comment"
+msgstr "კომენტარის დამატება"
+
+#: templates/posts/post_detail.html:91
+msgid "Send"
+msgstr "გაგზავნა"
+
+#: templates/posts/profile.html:17
+msgid "Subscribers:"
+msgstr "გამომწერები:"
+
+#: templates/posts/profile.html:19
+msgid "Subscriptions:"
+msgstr "გამოწერები:"
+
+#: templates/posts/profile.html:21
+msgid "Posts:"
+msgstr "პოსტები:"
+
+#: templates/posts/profile.html:32
+msgid "Unfollow"
+msgstr "მიყოლა"
+
+#: templates/posts/profile.html:38
+msgid "Follow"
+msgstr "გამოწერა"
+
+#: templates/users/logged_out.html:3 templates/users/logged_out.html:5
+msgid "Successfully logout"
+msgstr "წარმატებით გამოვედი"
+
+#: templates/users/login.html:4 templates/users/login.html:17
+#: templates/users/password_reset_complete.html:14
+msgid "Login"
+msgstr "შესვლა"
+
+#: templates/users/login.html:10
+msgid "Login to the site"
+msgstr "შესვლა საიტზე"
+
+#: templates/users/login.html:19
+msgid "Forgot password?"
+msgstr "დაგავიწყდა პაროლი?"
+
+#: templates/users/password_change_done.html:3
+#: templates/users/password_change_done.html:10
+#: templates/users/password_change_done.html:13
+msgid "Password changed successfully"
+msgstr "პაროლი წარმატებით შეიცვალა"
+
+#: templates/users/password_change_form.html:18
+msgid "Old password"
+msgstr "ძველი პაროლი"
+
+#: templates/users/password_change_form.html:25
+#: templates/users/password_reset_confirm.html:3
+#: templates/users/password_reset_confirm.html:19
+msgid "New password"
+msgstr "ახალი პაროლი"
+
+#: templates/users/password_change_form.html:31
+#: templates/users/password_reset_confirm.html:25
+msgid ""
+"Your password must not be the same as or too similar to your name or other "
+"personal information."
+msgstr ""
+"თქვენი პაროლი არ უნდა იყოს იგივე ან ძალიან ჰგავს თქვენს სახელს ან "
+"სხვასპირადი ინფორმაცია."
+
+#: templates/users/password_change_form.html:32
+#: templates/users/password_reset_confirm.html:26
+msgid "Your password must be at least 8 characters."
+msgstr "თქვენი პაროლი უნდა იყოს მინიმუმ 8 სიმბოლო."
+
+#: templates/users/password_change_form.html:33
+#: templates/users/password_reset_confirm.html:27
+msgid "Your password cannot be one of the commonly used passwords."
+msgstr ""
+"თქვენი პაროლი არ შეიძლება იყოს ერთ-ერთი ყველაზე ხშირად გამოყენებული პაროლი."
+
+#: templates/users/password_change_form.html:34
+#: templates/users/password_reset_confirm.html:28
+msgid "Your password cannot be all numbers."
+msgstr "თქვენი პაროლი არ შეიძლება იყოს ყველა რიცხვი."
+
+#: templates/users/password_change_form.html:40
+msgid "Comfirm new password"
+msgstr "ახალი პაროლის დადასტურება"
+
+#: templates/users/password_reset_complete.html:3
+#: templates/users/password_reset_complete.html:10
+#: templates/users/password_reset_complete.html:13
+msgid "Password was dropped"
+msgstr "პაროლი ჩამოიშალა"
+
+#: templates/users/password_reset_confirm.html:12
+msgid "Enter the new password"
+msgstr "შეიყვანეთ ახალი პაროლი"
+
+#: templates/users/password_reset_confirm.html:34
+msgid "Confirm new password"
+msgstr "ახალი პაროლის დადასტურება"
+
+#: templates/users/password_reset_confirm.html:41
+msgid "Set new password"
+msgstr "ახალი პაროლის დაყენება"
+
+#: templates/users/password_reset_confirm.html:57
+msgid "The password reset link is out of date."
+msgstr "პაროლის გადატვირთვის ბმული მოძველებულია."
+
+#: templates/users/password_reset_done.html:3
+msgid "Password dropped successfully"
+msgstr "პაროლი წარმატებით ჩავარდა"
+
+#: templates/users/password_reset_done.html:10
+msgid "e-mail sent"
+msgstr "ელ.ფოსტა გაიგზავნა"
+
+#: templates/users/password_reset_done.html:13
+msgid "Please check your email with a link to restore"
+msgstr "გთხოვთ შეამოწმოთ თქვენი ელფოსტა აღდგენის ბმულით"
+
+#: templates/users/password_reset_form.html:10
+msgid "To reset your old password, enter the email address you registered with"
+msgstr ""
+"თქვენი ძველი პაროლის აღსადგენად, შეიყვანეთ ელ.ფოსტის მისამართი, რომლითაც "
+"დარეგისტრირდით"
+
+#: templates/users/password_reset_form.html:17
+msgid "email address"
+msgstr "ელ.ფოსტის მისამართი"
+
+#: templates/users/password_reset_form.html:24
+msgid "Reset password"
+msgstr "პაროლის გადაყენება"
+
+#: templates/users/signup.html:4
+msgid "Signup"
+msgstr "რეგისტრაცია"

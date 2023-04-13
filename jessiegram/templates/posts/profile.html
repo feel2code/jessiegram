@@ -1,6 +1,7 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% block title %}
-    Профиль {{ username }}
+{% trans 'Account' %} {{ username }}
 {% endblock title %}
 {% block content %}
     {% load thumbnail %}
@@ -13,11 +14,11 @@
                         <p>
                             {{ username.get_full_name }}
                             <br />
-                            Подписчиков: {{ username.following.count }}
+                            {% trans 'Subscribers:' %} {{ username.following.count }}
                             <br />
-                            Подписки: {{ username.follower.count }}
+                            {% trans 'Subscriptions:' %} {{ username.follower.count }}
                             <br />
-                            Постов: {{ post_count }}
+                            {% trans 'Posts:' %} {{ post_count }}
                         </p>
                     </div>
                     <div class="px-3 px-3">
@@ -28,13 +29,13 @@
                                     <a class="py-1 btn btn-outline-secondary custom-left-px50"
                                        href="{% url "posts:profile_unfollow" username %}"
                                        role="button">
-                                        Отписаться
+                                        {% trans 'Unfollow' %}
                                     </a>
                                 {% else %}
                                     <a class="py-1 btn btn-outline-secondary custom-left-px50"
                                        href="{% url "posts:profile_follow" username %}"
                                        role="button">
-                                        Подписаться
+                                        {% trans 'Follow' %}
                                     </a>
                                 {% endif %}
                             {% endif %}

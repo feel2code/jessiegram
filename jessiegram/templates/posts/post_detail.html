@@ -1,6 +1,7 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% block title %}
-    Пост {{ post|truncatechars:30 }}
+{% trans 'Post' %} {{ post|truncatechars:30 }}
 {% endblock title %}
 {% block content %}
     {% load static %}
@@ -29,7 +30,7 @@
                     <a href="{% url "posts:profile" post.author %}">@{{ post.author }}</a>
                     {% if post.group %}
                         <p>
-                            в группе: <a href="{% url "posts:group_list" post.group.slug %}">{{ post.group }}</a>
+                            {% trans 'In the group:' %} <a href="{% url "posts:group_list" post.group.slug %}">{{ post.group }}</a>
                         </p>
                     {% endif %}
                     <p class="custom-wrapper">
@@ -38,9 +39,9 @@
                     <p>
                         {% if editable %}
                             <a class="btn btn-outline-secondary"
-                               href="{% url "posts:post_edit" post_id %}">редактировать</a>
+                               href="{% url "posts:post_edit" post_id %}">{% trans 'Edit' %}</a>
                             <a class="btn btn-outline-secondary"
-                               href="{% url "posts:post_delete" post_id %}">удалить</a>
+                               href="{% url "posts:post_delete" post_id %}">{% trans 'Delete' %}</a>
                         {% endif %}
                     </p>
                 </div>
@@ -52,7 +53,7 @@
                                 <img src="{% static 'img/like.svg' %}" height="20" width="20" alt="like"/>{% endif %}</a>
                             {{ post.likes.count }}
                         <br/>
-                        комментариев: {{ post.comments.count }}
+                        {% trans 'Comments' %} {{ post.comments.count }}
                     </p>
                 </div>
                 <div class="row px-3 position-absolute bottom-0 end-0 custom-date">
@@ -82,12 +83,12 @@
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4 card my-4">
-                <h5 class="card-header">Добавить комментарий:</h5>
+                <h5 class="card-header">{% trans 'Add comment' %}</h5>
                 <div class="card-body">
                     <form method="post" action="{% url "posts:add_comment" post.id %}">
                         {% csrf_token %}
                         <div class="form-group mb-2">{{ form.text|addclass:"form-control" }}</div>
-                        <button type="submit" class="btn btn-outline-secondary">Отправить</button>
+                        <button type="submit" class="btn btn-outline-secondary">{% trans 'Send' %}</button>
                     </form>
                 </div>
             </div>

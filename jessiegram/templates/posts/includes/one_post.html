@@ -1,5 +1,6 @@
 {% load thumbnail %}
 {% load static %}
+{% load i18n %}
 <div class="bg-white box-shadow mx-auto position-relative {% if post.image %}custom-container-image-onepost{% else %}custom-container-wimage-onepost{% endif %}">
     <div class="row align-self-start">
         {% thumbnail post.image "300x300" crop="center" upscale=True as im %}
@@ -15,7 +16,7 @@
         <a href="{% url 'posts:profile' post.author %}">@{{ post.author }}</a>
         {% if post.group %}
             <p>
-                в группе: <a href="{% url 'posts:group_list' post.group.slug %}">{{ post.group }}</a>
+                {% trans 'In the group:' %} <a href="{% url 'posts:group_list' post.group.slug %}">{{ post.group }}</a>
             </p>
         {% endif %}
         <p class="custom-wrapper">
@@ -23,7 +24,7 @@
         </p>
     </div>
     <div class="px-3 position-absolute bottom-0 start-0 custom-all-grey">
-        <p>
+        <p class="small">
 {#            <a href="{% url 'posts:add_or_delete_like' post.id %}">#}
 {#                {% for Like in post.likes.get_queryset %}#}
 {#                    {% if user == Like.user %}#}
@@ -32,12 +33,12 @@
 {#                {% endfor %}#}
 {#                лайков: #}
 {#            </a>#}
-            лайков: {{ post.likes.count }}
+            {% trans 'liked:' %} {{ post.likes.count }}
             <br />
-            комментов: {{ post.comments.count }}
+            {% trans 'commented:' %} {{ post.comments.count }}
         </p>
     </div>
-    <div class="row px-3 position-absolute bottom-0 end-0 custom-date">
+    <div class="row px-3 position-absolute bottom-0 end-0 custom-date small">
         <p>
             {{ post.pub_date|date:"d E Y" }}
         </p>

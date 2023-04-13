@@ -1,0 +1,335 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-13 17:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: feel2code <nabiullinfa@gmail.ru>\n"
+"Language-Team: feel2code <nabiullinfa@gmail.ru>\n"
+"Language: RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: jessiegram/settings.py:145
+msgid "English"
+msgstr "Английский"
+
+#: jessiegram/settings.py:146
+msgid "Russian"
+msgstr "Русский"
+
+#: jessiegram/settings.py:147
+msgid "Georgian"
+msgstr "Грузинский"
+
+#: templates/about/tech.html:3 templates/includes/footer.html:13
+msgid "Techs"
+msgstr "Технологии"
+
+#: templates/base.html:27
+msgid "No content :("
+msgstr "Контент временно отсутствует :("
+
+#: templates/core/403.html:3 templates/core/403.html:7
+#: templates/core/403csrf.html:3 templates/core/403csrf.html:7
+#: templates/core/404.html:3 templates/core/404.html:7
+#: templates/core/500.html:3 templates/core/500.html:7
+#: templates/users/password_reset_confirm.html:54
+msgid "Error"
+msgstr "Ошибка"
+
+#: templates/core/403.html:8 templates/core/403csrf.html:8
+#: templates/core/404.html:9 templates/core/500.html:8
+#: templates/includes/header.html:12
+msgid "Logo.with.a.dog"
+msgstr "Логотип.с.собачкой"
+
+#: templates/core/403.html:10 templates/core/403csrf.html:10
+#: templates/core/404.html:11 templates/core/500.html:10
+msgid "Main page"
+msgstr "На главную"
+
+#: templates/core/404.html:8
+msgid "Page"
+msgstr "Страница"
+
+#: templates/core/404.html:8
+msgid "not exists"
+msgstr "не существует"
+
+#: templates/includes/footer.html:10
+msgid "Additional information"
+msgstr "Подробности"
+
+#: templates/includes/footer.html:16
+msgid "Contacts"
+msgstr "Контакты"
+
+#: templates/includes/header.html:63 templates/posts/profile.html:4
+msgid "Account"
+msgstr "Профиль"
+
+#: templates/includes/header.html:66 templates/posts/includes/switcher.html:16
+msgid "Subscriptions"
+msgstr "Подписки"
+
+#: templates/includes/header.html:69 templates/posts/create_group.html:10
+#: templates/posts/create_group.html:17
+msgid "Create group"
+msgstr "Создать группу"
+
+#: templates/includes/header.html:72
+#: templates/users/password_change_form.html:3
+#: templates/users/password_change_form.html:10
+#: templates/users/password_change_form.html:47
+msgid "Change password"
+msgstr "Сменить пароль"
+
+#: templates/includes/header.html:75
+msgid "Logout"
+msgstr "Выйти"
+
+#: templates/includes/header.html:84
+msgid "Sign in"
+msgstr "Войти"
+
+#: templates/includes/header.html:90 templates/users/signup.html:10
+#: templates/users/signup.html:17
+msgid "Sign up"
+msgstr "Регистрация"
+
+#: templates/posts/create_group.html:4
+msgid "New group"
+msgstr "Новая группа"
+
+#: templates/posts/create_post.html:4
+msgid "Create new post"
+msgstr "Создать пост"
+
+#: templates/posts/create_post.html:13
+msgid "Submit post"
+msgstr "Опубликовать"
+
+#: templates/posts/create_post.html:15
+msgid "Edit post"
+msgstr "Редактировать пост"
+
+#: templates/posts/create_post.html:24
+msgid "Text:"
+msgstr "Текст:"
+
+#: templates/posts/create_post.html:42
+msgid "Add record"
+msgstr "Добавить запись"
+
+#: templates/posts/create_post.html:44
+msgid "Save"
+msgstr "Сохранить"
+
+#: templates/posts/follow.html:4
+msgid "Followers"
+msgstr "Подписчики"
+
+#: templates/posts/group_list.html:18
+msgid "Posts in the group:"
+msgstr "Постов в группе:"
+
+#: templates/posts/includes/one_post.html:19
+#: templates/posts/post_detail.html:33
+msgid "In the group:"
+msgstr "В группе:"
+
+#: templates/posts/includes/one_post.html:36
+msgid "liked:"
+msgstr "лайков:"
+
+#: templates/posts/includes/one_post.html:38
+msgid "commented:"
+msgstr "комментариев:"
+
+#: templates/posts/includes/paginator.html:6
+msgid "First"
+msgstr "Первая"
+
+#: templates/posts/includes/paginator.html:9
+msgid "Previous"
+msgstr "Предыдущая"
+
+#: templates/posts/includes/paginator.html:27
+msgid "Next"
+msgstr "Следующая"
+
+#: templates/posts/includes/paginator.html:32
+msgid "Last"
+msgstr "Последняя"
+
+#: templates/posts/includes/switcher.html:9
+msgid "All authors"
+msgstr "Все авторы"
+
+#: templates/posts/post_detail.html:4
+msgid "Post"
+msgstr "Пост"
+
+#: templates/posts/post_detail.html:42
+msgid "Edit"
+msgstr "Редактировать"
+
+#: templates/posts/post_detail.html:44
+msgid "Delete"
+msgstr "Удалить"
+
+#: templates/posts/post_detail.html:56
+msgid "Comments"
+msgstr "Комментарии"
+
+#: templates/posts/post_detail.html:86
+msgid "Add comment"
+msgstr "Добавить комментарий"
+
+#: templates/posts/post_detail.html:91
+msgid "Send"
+msgstr "Отправить"
+
+#: templates/posts/profile.html:17
+msgid "Subscribers:"
+msgstr "Подписчиков:"
+
+#: templates/posts/profile.html:19
+msgid "Subscriptions:"
+msgstr "Подписок:"
+
+#: templates/posts/profile.html:21
+msgid "Posts:"
+msgstr "Постов:"
+
+#: templates/posts/profile.html:32
+msgid "Unfollow"
+msgstr "Отписаться"
+
+#: templates/posts/profile.html:38
+msgid "Follow"
+msgstr "Подписаться"
+
+#: templates/users/logged_out.html:3 templates/users/logged_out.html:5
+msgid "Successfully logout"
+msgstr "Выход выполнен успешно"
+
+#: templates/users/login.html:4 templates/users/login.html:17
+#: templates/users/password_reset_complete.html:14
+msgid "Login"
+msgstr "Войти"
+
+#: templates/users/login.html:10
+msgid "Login to the site"
+msgstr "Войти на сайт"
+
+#: templates/users/login.html:19
+msgid "Forgot password?"
+msgstr "Забыли пароль?"
+
+#: templates/users/password_change_done.html:3
+#: templates/users/password_change_done.html:10
+#: templates/users/password_change_done.html:13
+msgid "Password changed successfully"
+msgstr "Пароль успешно изменен"
+
+#: templates/users/password_change_form.html:18
+msgid "Old password"
+msgstr "Старый пароль"
+
+#: templates/users/password_change_form.html:25
+#: templates/users/password_reset_confirm.html:3
+#: templates/users/password_reset_confirm.html:19
+msgid "New password"
+msgstr "Новый пароль"
+
+#: templates/users/password_change_form.html:31
+#: templates/users/password_reset_confirm.html:25
+msgid ""
+"Your password must not be the same as or too similar to your name or other "
+"personal information."
+msgstr ""
+"Ваш пароль не должен совпадать с вашим именем или другой персональной "
+"информацией или быть слишком похожим на неё."
+
+#: templates/users/password_change_form.html:32
+#: templates/users/password_reset_confirm.html:26
+msgid "Your password must be at least 8 characters."
+msgstr "Ваш пароль должен содержать как минимум 8 символов."
+
+#: templates/users/password_change_form.html:33
+#: templates/users/password_reset_confirm.html:27
+msgid "Your password cannot be one of the commonly used passwords."
+msgstr "Ваш пароль не может быть одним из широко распространённых паролей."
+
+#: templates/users/password_change_form.html:34
+#: templates/users/password_reset_confirm.html:28
+msgid "Your password cannot be all numbers."
+msgstr "Ваш пароль не может быть одним из широко распространённых паролей."
+
+#: templates/users/password_change_form.html:40
+msgid "Comfirm new password"
+msgstr "Подтвердите новый пароль"
+
+#: templates/users/password_reset_complete.html:3
+#: templates/users/password_reset_complete.html:10
+#: templates/users/password_reset_complete.html:13
+msgid "Password was dropped"
+msgstr "Пароль успешно сброшен"
+
+#: templates/users/password_reset_confirm.html:12
+msgid "Enter the new password"
+msgstr "Введите новый пароль"
+
+#: templates/users/password_reset_confirm.html:34
+msgid "Confirm new password"
+msgstr "Подтвердите новый пароль"
+
+#: templates/users/password_reset_confirm.html:41
+msgid "Set new password"
+msgstr "Новый пароль"
+
+#: templates/users/password_reset_confirm.html:57
+msgid "The password reset link is out of date."
+msgstr "Ссылка сброса пароля или устарела."
+
+#: templates/users/password_reset_done.html:3
+msgid "Password dropped successfully"
+msgstr "Пароль изменен"
+
+#: templates/users/password_reset_done.html:10
+msgid "e-mail sent"
+msgstr "Письмо отправлен"
+
+#: templates/users/password_reset_done.html:13
+msgid "Please check your email with a link to restore"
+msgstr "Вам пришло письмо со ссылкой на восстановление"
+
+#: templates/users/password_reset_form.html:10
+msgid "To reset your old password, enter the email address you registered with"
+msgstr ""
+"Чтобы сбросить старый пароль — введите адрес электронной почты, под которым "
+"вы регистрировались"
+
+#: templates/users/password_reset_form.html:17
+msgid "email address"
+msgstr "Адрес электронной почты"
+
+#: templates/users/password_reset_form.html:24
+msgid "Reset password"
+msgstr "Сменить пароль"
+
+#: templates/users/signup.html:4
+msgid "Signup"
+msgstr "Зарегистрироваться"

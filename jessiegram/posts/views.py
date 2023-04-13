@@ -1,5 +1,7 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.conf import settings
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect
+from django.shortcuts import render, get_object_or_404, redirect
 
 from .models import Like, Post, Group, User, Follow
 from .forms import PostForm, CommentForm, GroupForm
@@ -231,3 +233,12 @@ def add_or_delete_like(request, post_id):
     else:
         Like.objects.filter(user=current_user, post=post).delete()
     return redirect(request.META.get('HTTP_REFERER'))
+
+
+# @login_required
+def set_language(request):
+    lang = request.GET.get('l', 'en')
+    request.session[settings.LANGUAGE_SESSION_KEY] = lang
+    response = HttpResponseRedirect(request.META.get('HTTP_REFERER', '/'))
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME, lang)
+    return response

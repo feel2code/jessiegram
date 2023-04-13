@@ -71,4 +71,9 @@ urlpatterns = [
         views.add_or_delete_like,
         name='add_or_delete_like'
     ),
+    path(
+        r'set-language/',
+        views.set_language,
+        name='set_language'
+    ),
 ]
