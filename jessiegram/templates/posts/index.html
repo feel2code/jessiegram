@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{#{% load i18n %}#}
 {% block title %}
     JessieGram
 {% endblock title %}
@@ -6,14 +7,14 @@
     <div class="py-0">
         <div class="bg-light">
             <div class="container py-3">
-                {% load cache %}
-                {% cache 20 index_page page_obj %}
+{#                {% load cache %}#}
+{#                {% cache 5 index_page page_obj %}#}
                 <div class="row">
                     {% for post in page_obj %}
                         <div class="col-md-4">{% include "posts/includes/one_post.html" %}</div>
                     {% endfor %}
                 </div>
-            {% endcache %}
+{#            {% endcache %}#}
             {% include "posts/includes/paginator.html" %}
         </div>
     </div>
