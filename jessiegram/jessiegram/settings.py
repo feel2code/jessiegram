@@ -41,7 +41,7 @@ INTERNAL_IPS = [
 ]
 
 # posts limit on web-page
-LIMIT_POSTS = 10
+LIMIT_POSTS = 9
 
 # text limit for tests
 LIMIT_TEXT = 15
