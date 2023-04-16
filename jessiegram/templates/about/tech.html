@@ -2,30 +2,28 @@
 {% load i18n %}
 {% block title %}{% trans 'Techs' %}{% endblock %}
 {% block content %}
-    <div style="text-align: center;" class="bg-light">
-        <div class="bg-white box-shadow mx-auto" style="width: 40%; height: 400px; border-radius: 21px 21px 21px 21px;">
+    <div style="text-align: center;" class="container">
+        <div class="bg-white box-shadow p-4" style="border-radius: 21px;">
             <p>
-            <h2 align="center">🐕JessieGram🐈</h2>
+            <h2 align="center" class="mb-4">🐕 JessieGram 🐈</h2>
 
-            <h5 align="center">
-                "Jessiegram" – это проект, созданный на платформе Django,<br>
-                Тут можно зарегистрировать аккаунт, создавать посты со своими питомцами,<br>
-                комментировать и лайкать посты других любителей животных.<br>
-                Также вы можете следить за авторами, чьи посты вам нравятся.<br>
-                Добро пожаловать в JessieGram!<br>
-            </h5>
+            <h6>"Jessiegram" – это проект, созданный на платформе Django,</h6>
+            <h6>Тут можно зарегистрировать аккаунт, создавать посты со своими питомцами,</h6>
+            <h6>комментировать и лайкать посты других любителей животных.</h6>
+            <h6>Также вы можете следить за авторами, чьи посты вам нравятся.</h6>
+            <h6>Добро пожаловать в JessieGram!</h6>
 
-            <p align="center">
+            <div align="center" class="mt-4">
                 <a href="https://python.org">
-                    <img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python">
-                </a><br>
+                    <img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python"></a>
                 <a href="https://GitHub.com/feel2code">
-                    <img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="built-with-love">
-                </a> <br>
+                    <img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="built-with-love"></a>
                 <a href="http://www.djangoproject.com/"><img
-                        src="https://www.djangoproject.com/m/img/badges/djangopowered126x54.gif" border="0"
-                        alt="Powered by Django." title="Powered by Django."/></a><br>
-            </p>
+                        src="https://www.djangoproject.com/m/img/badges/djangopowered126x54.gif"
+                        border="0"
+                        style="height: 35px"
+                        alt="Powered by Django." title="Powered by Django."/></a>
+            </div>
         </div>
     </div>
 {% endblock %}

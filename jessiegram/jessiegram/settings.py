@@ -158,8 +158,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')  # uncomment for prod, comment for local debug
-# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)  # comment for prod, uncomment for debug
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')  # uncomment for prod, comment for local debug
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)  # comment for prod, uncomment for debug
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/

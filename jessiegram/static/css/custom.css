@@ -129,9 +129,9 @@
 */
 
 .custom-black {
-    color: black;
+    color: black !important;
 }
 
-.custom-black {
-    color: blue;
+.custom-black:hover {
+    color: red !important;
 }
