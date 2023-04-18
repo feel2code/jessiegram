@@ -1,19 +1,19 @@
 {% load i18n %}
+{% load static %}
 <div class="row">
     <div class="col-6 col-md">
         <p>
             © 2021 - {{ year }} Copyright <span class="custom-black"><a class="text-muted" href="{% url 'posts:index' %}">JessieGram</a></span><br>
-            Developed by <a class="text-muted" href="https://github.com/feel2code">feel2code</a>
+            Developed by <a class="text-muted" href="https://github.com/feel2code">feel2code</a><br>
+            <a class="text-muted" href="{% url 'about:tech' %}">{% trans 'Techs' %}</a><br>
+            <br>
+            Icons from <a target="_blank" href="https://icons8.com" class="iconslinks">Icons8</a>
         </p>
     </div>
     <div class="col-6 col-md">
-        <ul class="list-unstyled text-small">
-            <li>
-                <a class="text-muted" href="{% url 'about:tech' %}">{% trans 'Techs' %}</a>
-            </li>
-            <li>
-                <a class="text-muted" href="https://www.t.me/feel2code">{% trans 'Contacts' %}</a>
-            </li>
-        </ul>
+        <a href="https://t.me/feel2code"><img src="{% static 'img/telegram.png' %}" width="40" height="40" alt="telegram"/></a>
+        <a href="https://www.linkedin.com/in/feliks-nabiullin-2b8181234/"><img src="{% static 'img/linkedin.png' %}" width="50" height="50" alt="linkedin"/></a>
+        <a href="https://github.com/feel2code"><img src="{% static 'img/github.png' %}" width="50" height="50" alt="github"/></a>
+        <a href="mailto:feliksnab@gmail.com"><img src="{% static 'img/mailto.png' %}" width="45" height="45" alt="mailto"/></a>
     </div>
 </div>
