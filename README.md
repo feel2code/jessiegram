@@ -1,21 +1,30 @@
 <h1 align="center" ><a href="http://jessiegram.ru">🐕JessieGram🐈</a></h1>
 
-<p align="center"> 
-    "Jessiegram" is a project created on Django framework,<br>
-    It's a free to signup, create posts with your pets,<br>
-    comment other posts and like posts.<br>
+![ASTP auto Logo](https://repository-images.githubusercontent.com/485134292/47dc015a-961a-4592-82eb-80cbf78835a7)
+
+<h4>
+    "Jessiegram" is a project created on Django framework.
+    It's a free to signup, create posts with your pets,
+    comment other posts and like posts.
     Also you can follow authors which posts you like.<br>
-    Feel free to use <a href="http://jessiegram.ru">JessieGram</a>!<br>
-</p>
-<p align="center"> 
-    "Jessiegram" – это проект, созданный на платформе Django,<br>
-    Тут можно зарегистрировать аккаунт, создавать посты со своими питомцами,<br>
-    комментировать и лайкать посты других любителей животных.<br>
+    Feel free to use <a href="http://jessiegram.ru">JessieGram</a>!</h4>
+<h4> 
+    "Jessiegram" – это проект, созданный на платформе Django,
+    Тут можно зарегистрировать аккаунт, создавать посты со своими питомцами,
+    комментировать и лайкать посты других любителей животных.
     Также вы можете следить за авторами, чьи посты вам нравятся.<br>
-    Добро пожаловать в <a href="http://jessiegram.ru">JessieGram!</a><br>
-</p>
+    Добро пожаловать в <a href="http://jessiegram.ru">JessieGram!</a>
+</h4>
+<h4>
+    Jessiegram არის Django პლატფორმაზე შექმნილი პროექტი,
+    აქ შეგიძლიათ დაარეგისტრიროთ ანგარიში, შექმნათ პოსტები თქვენს შინაურ ცხოველებთან,
+    დააკომენტაროთ და მოიწონოთ სხვა ცხოველების მოყვარულთა პოსტები.
+    თქვენ ასევე შეგიძლიათ თვალი ადევნოთ იმ ავტორებს, რომელთა პოსტებიც მოგწონთ.<br>
+    კეთილი იყოს თქვენი მობრძანება <a href="http://jessiegram.ru">Jessiegram!</a>
+</h4>
+
+<h3 align="center"> Technologies used in this project | Технологии | ტექნოლოგიები</h3>
 <p align="center">
-<b>Technologies used in this project:</b><br>
     <a href="https://python.org">
         <img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python">
     </a>
