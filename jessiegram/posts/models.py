@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth import get_user_model
+from django.utils.translation import ugettext_lazy as _
 
 
 User = get_user_model()
@@ -26,14 +27,14 @@ class Post(models.Model):
 
     text = models.CharField(
         max_length=200,
-        verbose_name='Текст поста',
-        help_text='Введите текст поста'
+        verbose_name=_("Post text"),
+        help_text=_("Enter post's text")
     )
     author = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
         related_name='posts',
-        verbose_name='Автор'
+        verbose_name=_('Author')
     )
     group = models.ForeignKey(
         Group,
@@ -41,16 +42,16 @@ class Post(models.Model):
         related_name='group',
         blank=True,
         null=True,
-        verbose_name='Группа',
-        help_text='Группа, к которой будет относиться пост'
+        verbose_name=_('Group'),
+        help_text=_('Related group')
     )
     pub_date = models.DateTimeField(
-        'Дата создания',
+        _('Created at'),
         auto_now_add=True,
         db_index=True
     )
     image = models.ImageField(
-        'Картинка',
+        _('Photo'),
         upload_to='posts/',
     )
     like = models.BooleanField(
@@ -59,8 +60,8 @@ class Post(models.Model):
 
     class Meta:
         ordering = ('-pub_date',)
-        verbose_name = 'Пост'
-        verbose_name_plural = 'Посты'
+        verbose_name = _('Post')
+        verbose_name_plural = _('Posts')
 
 
 class Comment(models.Model):
@@ -71,20 +72,20 @@ class Comment(models.Model):
         Post,
         on_delete=models.CASCADE,
         related_name='comments',
-        verbose_name='Комментарий',
+        verbose_name=_('Comment'),
     )
     author = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
         related_name='comments',
-        verbose_name='Автор'
+        verbose_name=_('Author'),
     )
     text = models.CharField(
         max_length=200,
-        help_text='Впишите текст здесь',
+        help_text=_("Enter post's text"),
     )
     pub_date = models.DateTimeField(
-        'Дата создания',
+        _('Created at'),
         auto_now_add=True,
         db_index=True
     )
@@ -92,22 +93,22 @@ class Comment(models.Model):
 
 class Follow(models.Model):
     def __str__(self):
-        return f'{self.user.username}подписан на {self.author.username}' or ''
+        return f'{self.user.username} follows {self.author.username}' or ''
 
     user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
         related_name='follower',
-        verbose_name='Подписчик',
+        verbose_name=_('Follower'),
     )
     author = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
         related_name='following',
-        verbose_name='Автор',
+        verbose_name=_('Following'),
     )
     pub_date = models.DateTimeField(
-        'Дата создания',
+        _('Created at'),
         auto_now_add=True,
         db_index=True
     )

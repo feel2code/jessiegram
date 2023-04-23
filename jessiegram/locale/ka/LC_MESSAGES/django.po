@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-13 17:04+0000\n"
+"POT-Creation-Date: 2023-04-23 22:33+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: feel2code <nabiullinfa@gmail.ru>\n"
 "Language-Team: feel2code <nabiullinfa@gmail.ru>\n"
@@ -30,7 +30,101 @@ msgstr "რუსული"
 msgid "Georgian"
 msgstr "ქართული"
 
-#: templates/about/tech.html:3 templates/includes/footer.html:13
+#: posts/forms.py:11 posts/forms.py:26 posts/models.py:31 posts/models.py:85
+msgid "Enter post's text"
+msgstr "შეიყვანეთ ტექსტი"
+
+#: posts/forms.py:13 posts/forms.py:28
+msgid "Post's text"
+msgstr "პოსტის ტექსტი"
+
+#: posts/forms.py:19
+msgid "Select group"
+msgstr "აირჩიეთ ჯგუფი"
+
+#: posts/forms.py:34 posts/models.py:75
+#, fuzzy
+#| msgid "Comments"
+msgid "Comment"
+msgstr "კომენტარები"
+
+#: posts/forms.py:40 posts/forms.py:52
+msgid "Enter text"
+msgstr "შეიყვანეთ ტექსტი"
+
+#: posts/forms.py:42
+#, fuzzy
+#| msgid "In the group:"
+msgid "Name of the group"
+msgstr "გუფის სახელი"
+
+#: posts/forms.py:46
+msgid "Enter text with latin symbols"
+msgstr "შეიყვანეთ ტექსტი ლათინური სიმბოლოებით"
+
+#: posts/forms.py:48
+msgid "Short link"
+msgstr "მოკლე ბმული"
+
+#: posts/forms.py:54
+#, fuzzy
+#| msgid "Posts in the group:"
+msgid "Description of the group"
+msgstr "პოსტები ჯგუფში:"
+
+#: posts/models.py:30
+#, fuzzy
+#| msgid "Post"
+msgid "Post text"
+msgstr "პოსტი"
+
+#: posts/models.py:37 posts/models.py:81
+#, fuzzy
+#| msgid "All authors"
+msgid "Author"
+msgstr "ყველა ავტორი"
+
+#: posts/models.py:45
+msgid "Group"
+msgstr "ჯგუფი"
+
+#: posts/models.py:46
+msgid "Related group"
+msgstr "დაკავშირებული ჯგუფი"
+
+#: posts/models.py:49 posts/models.py:88 posts/models.py:111
+#, fuzzy
+#| msgid "Create new post"
+msgid "Created at"
+msgstr "პოსტის შექმნა"
+
+#: posts/models.py:54
+msgid "Photo"
+msgstr "ფოტო"
+
+#: posts/models.py:63 templates/posts/post_detail.html:4
+msgid "Post"
+msgstr "პოსტი"
+
+#: posts/models.py:64
+#, fuzzy
+#| msgid "Posts:"
+msgid "Posts"
+msgstr "პოსტები"
+
+#: posts/models.py:102
+#, fuzzy
+#| msgid "Followers"
+msgid "Follower"
+msgstr "აბონენტები"
+
+#: posts/models.py:108
+#, fuzzy
+#| msgid "Follow"
+msgid "Following"
+msgstr "გამოწერა"
+
+#: templates/about/tech.html:3 templates/includes/footer.html:8
 msgid "Techs"
 msgstr "ტექნოლოგიები"
 
@@ -64,14 +158,6 @@ msgstr "გვერდი"
 #: templates/core/404.html:8
 msgid "not exists"
 msgstr "არ არსებობს"
-
-#: templates/includes/footer.html:10
-msgid "Additional information"
-msgstr "დეტალები"
-
-#: templates/includes/footer.html:16
-msgid "Contacts"
-msgstr "კონტაქტები"
 
 #: templates/includes/header.html:63 templates/posts/profile.html:4
 msgid "Account"
@@ -174,10 +260,6 @@ msgstr "ბოლო"
 #: templates/posts/includes/switcher.html:9
 msgid "All authors"
 msgstr "ყველა ავტორი"
-
-#: templates/posts/post_detail.html:4
-msgid "Post"
-msgstr "პოსტი"
 
 #: templates/posts/post_detail.html:42
 msgid "Edit"
@@ -332,3 +414,9 @@ msgstr "პაროლის გადაყენება"
 #: templates/users/signup.html:4
 msgid "Signup"
 msgstr "რეგისტრაცია"
+
+#~ msgid "Additional information"
+#~ msgstr "დეტალები"
+
+#~ msgid "Contacts"
+#~ msgstr "კონტაქტები"

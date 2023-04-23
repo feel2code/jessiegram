@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-13 17:04+0000\n"
+"POT-Creation-Date: 2023-04-23 22:33+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: feel2code <nabiullinfa@gmail.ru>\n"
 "Language-Team: feel2code <nabiullinfa@gmail.ru>\n"
@@ -32,7 +32,101 @@ msgstr "Русский"
 msgid "Georgian"
 msgstr "Грузинский"
 
-#: templates/about/tech.html:3 templates/includes/footer.html:13
+#: posts/forms.py:11 posts/forms.py:26 posts/models.py:31 posts/models.py:85
+msgid "Enter post's text"
+msgstr "Введите текст поста"
+
+#: posts/forms.py:13 posts/forms.py:28
+msgid "Post's text"
+msgstr "Текст поста"
+
+#: posts/forms.py:19
+msgid "Select group"
+msgstr "Выберите группу"
+
+#: posts/forms.py:34 posts/models.py:75
+#, fuzzy
+#| msgid "Comments"
+msgid "Comment"
+msgstr "Комментарии"
+
+#: posts/forms.py:40 posts/forms.py:52
+msgid "Enter text"
+msgstr "Введите текст"
+
+#: posts/forms.py:42
+#, fuzzy
+#| msgid "In the group:"
+msgid "Name of the group"
+msgstr "Имя группы"
+
+#: posts/forms.py:46
+msgid "Enter text with latin symbols"
+msgstr "Введите текст латиницей"
+
+#: posts/forms.py:48
+msgid "Short link"
+msgstr "Короткая ссылка"
+
+#: posts/forms.py:54
+#, fuzzy
+#| msgid "Posts in the group:"
+msgid "Description of the group"
+msgstr "Описание группы"
+
+#: posts/models.py:30
+#, fuzzy
+#| msgid "Post"
+msgid "Post text"
+msgstr "Пост"
+
+#: posts/models.py:37 posts/models.py:81
+#, fuzzy
+#| msgid "All authors"
+msgid "Author"
+msgstr "Все авторы"
+
+#: posts/models.py:45
+msgid "Group"
+msgstr "Группа"
+
+#: posts/models.py:46
+msgid "Related group"
+msgstr "Связанная группа"
+
+#: posts/models.py:49 posts/models.py:88 posts/models.py:111
+#, fuzzy
+#| msgid "Create new post"
+msgid "Created at"
+msgstr "Создать пост"
+
+#: posts/models.py:54
+msgid "Photo"
+msgstr "Фото"
+
+#: posts/models.py:63 templates/posts/post_detail.html:4
+msgid "Post"
+msgstr "Пост"
+
+#: posts/models.py:64
+#, fuzzy
+#| msgid "Posts:"
+msgid "Posts"
+msgstr "Постов:"
+
+#: posts/models.py:102
+#, fuzzy
+#| msgid "Followers"
+msgid "Follower"
+msgstr "Подписчики"
+
+#: posts/models.py:108
+#, fuzzy
+#| msgid "Follow"
+msgid "Following"
+msgstr "Подписаться"
+
+#: templates/about/tech.html:3 templates/includes/footer.html:8
 msgid "Techs"
 msgstr "Технологии"
 
@@ -66,14 +160,6 @@ msgstr "Страница"
 #: templates/core/404.html:8
 msgid "not exists"
 msgstr "не существует"
-
-#: templates/includes/footer.html:10
-msgid "Additional information"
-msgstr "Подробности"
-
-#: templates/includes/footer.html:16
-msgid "Contacts"
-msgstr "Контакты"
 
 #: templates/includes/header.html:63 templates/posts/profile.html:4
 msgid "Account"
@@ -176,10 +262,6 @@ msgstr "Последняя"
 #: templates/posts/includes/switcher.html:9
 msgid "All authors"
 msgstr "Все авторы"
-
-#: templates/posts/post_detail.html:4
-msgid "Post"
-msgstr "Пост"
 
 #: templates/posts/post_detail.html:42
 msgid "Edit"
@@ -333,3 +415,9 @@ msgstr "Сменить пароль"
 #: templates/users/signup.html:4
 msgid "Signup"
 msgstr "Зарегистрироваться"
+
+#~ msgid "Additional information"
+#~ msgstr "Подробности"
+
+#~ msgid "Contacts"
+#~ msgstr "Контакты"
