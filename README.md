@@ -25,12 +25,6 @@
 
 <h3 align="center"> Technologies used in this project | Технологии | ტექნოლოგიები</h3>
 <p align="center">
-    <a href="https://python.org">
-        <img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python">
-    </a>
-    <a href="https://GitHub.com/feel2code">
-        <img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="built-with-love">
-    </a>
     <a href="http://www.djangoproject.com/"><img src="https://www.djangoproject.com/m/img/badges/djangopowered126x54.gif" border="0" style="height: 35px" alt="Powered by Django." title="Powered by Django." /></a>
     <a href="http://www.djangoproject.com/"><img
                         src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png"
