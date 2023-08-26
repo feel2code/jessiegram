@@ -1,29 +1,39 @@
 <h1 align="center" ><a href="http://jessiegram.ru">🐕JessieGram🐈</a></h1>
 
-![ASTP auto Logo](https://repository-images.githubusercontent.com/485134292/47dc015a-961a-4592-82eb-80cbf78835a7)
+![Jessiegram Logo](https://repository-images.githubusercontent.com/485134292/47dc015a-961a-4592-82eb-80cbf78835a7)
 
 <h4>
-    "Jessiegram" is a project created on Django framework.
-    It's a free to signup, create posts with your pets,
-    comment other posts and like posts.
-    Also you can follow authors which posts you like.<br>
+    "Jessiegram" is my pet-project about our pets!
+    It's a free to signup, you can create posts with your pets,
+    comment and like other posts, follow authors which posts you like.
+    <br>
     Feel free to use <a href="http://jessiegram.ru">JessieGram</a>!</h4>
 <h4> 
-    "Jessiegram" – это проект, созданный на платформе Django,
-    Тут можно зарегистрировать аккаунт, создавать посты со своими питомцами,
+    "Jessiegram" – это мой мини-проект о питомцах!
+    Тут можно зарегистрировать аккаунт, создать пост со своим питомцем,
     комментировать и лайкать посты других любителей животных.
-    Также вы можете следить за авторами, чьи посты вам нравятся.<br>
+    Также вы можете следить за авторами, чьи посты вам нравятся.
+    <br>
     Добро пожаловать в <a href="http://jessiegram.ru">JessieGram!</a>
 </h4>
 <h4>
-    Jessiegram არის Django პლატფორმაზე შექმნილი პროექტი,
+    "Jessiegram" არის Django პლატფორმაზე შექმნილი პროექტი,
     აქ შეგიძლიათ დაარეგისტრიროთ ანგარიში, შექმნათ პოსტები თქვენს შინაურ ცხოველებთან,
     დააკომენტაროთ და მოიწონოთ სხვა ცხოველების მოყვარულთა პოსტები.
-    თქვენ ასევე შეგიძლიათ თვალი ადევნოთ იმ ავტორებს, რომელთა პოსტებიც მოგწონთ.<br>
+    თქვენ ასევე შეგიძლიათ თვალი ადევნოთ იმ ავტორებს, რომელთა პოსტებიც მოგწონთ.
+    <br>
     კეთილი იყოს თქვენი მობრძანება <a href="http://jessiegram.ru">Jessiegram!</a>
 </h4>
 
-<h3 align="center"> Technologies used in this project | Технологии | ტექნოლოგიები</h3>
+## Installation and usage:
+```bash
+git clone https://github.com/feel2code/jessiegram.git
+cd jessiegram
+chmod +x run_server.sh
+./run_server.sh
+```
+
+<h3 align="center"> Technologies used in this project</h3>
 <p align="center">
     <a href="http://www.djangoproject.com/"><img src="https://www.djangoproject.com/m/img/badges/djangopowered126x54.gif" border="0" style="height: 35px" alt="Powered by Django." title="Powered by Django." /></a>
     <a href="http://www.djangoproject.com/"><img
