@@ -16,7 +16,8 @@
         <a href="{% url 'posts:profile' post.author %}">@{{ post.author }}</a>
         {% if post.group %}
             <p>
-                {% trans 'In the group:' %} <a href="{% url 'posts:group_list' post.group.slug %}">{{ post.group }}</a>
+{#                {% trans 'In the group:' %}#}
+                <a href="{% url 'posts:group_list' post.group.slug %}">{{ post.group }}</a>
             </p>
         {% endif %}
         <p class="custom-wrapper">
