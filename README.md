@@ -38,6 +38,12 @@ chmod +x run_server.sh
 ./run_server.sh
 ```
 
+## Docker
+If you have Docker installed, then you can install and deploy Jessiegram in the easiest way:
+```bash
+docker pull feel2code/jessiegram:latest && docker run --env-file .env -d -p 80:8000 feel2code/jessiegram
+```
+
 <h3 align="center"> Technologies used in this project</h3>
 <p align="center">
     <a href="http://www.djangoproject.com/"><img src="https://www.djangoproject.com/m/img/badges/djangopowered126x54.gif" border="0" style="height: 35px" alt="Powered by Django." title="Powered by Django." /></a>
