@@ -26,6 +26,11 @@
 </h4>
 
 ## Installation and usage:
+Make `.env` file based on example in `.env.example`
+
+Put there all necessary variables for run server
+
+Simply run:
 ```bash
 git clone https://github.com/feel2code/jessiegram.git
 cd jessiegram
