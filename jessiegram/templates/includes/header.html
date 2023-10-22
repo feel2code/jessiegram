@@ -9,7 +9,7 @@
                      width="108"
                      height="30"
                      class="d-inline-block align-top"
-                     alt={% trans 'Logo.with.a.dog' %}/>
+                     alt={% trans 'JessieGram' %}/>
             </a>
             <button class="navbar-toggler"
                     type="button"
@@ -20,19 +20,37 @@
                     aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-                {% get_available_languages as LANGUAGES %}
-                {% for lang in LANGUAGES %}
-                {% if LANGUAGE_CODE == lang.0 %}
-                    <div class="nav-link custom-all-white small">{{lang.0.upper}}</div>
-                {% else %}
-                    <div class="nav-link small" >
-                        <a href="{% url 'posts:set_language' %}?l={{lang.0}}">{{lang.0.upper}}</a>
-                    </div>
-                {% endif %} |
-                {% endfor %}
+            </div>
             <div class="col-6"></div>
-            <div class="collapse navbar-collapse" id="navbarsExample05">
+            <div class="collapse navbar-collapse col-3" id="navbarsExample05">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        {% get_available_languages as langs %}
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           id="dropdown07"
+                           data-bs-toggle="dropdown"
+                           aria-current="page"
+                           aria-expanded="false"
+                           style="color:white">{{LANGUAGE_CODE.upper}}</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown07">
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   style="color: gray"
+                                   href="{% url 'posts:set_language' %}?l={{langs.0.0}}">{{langs.0.1}}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   style="color: gray"
+                                   href="{% url 'posts:set_language' %}?l={{langs.1.0}}">{{langs.1.1}}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   style="color: gray"
+                                   href="{% url 'posts:set_language' %}?l={{langs.2.0}}">{{langs.2.1}}</a>
+                            </li>
+                        </ul>
+                    </li>
                     {% if user.is_authenticated %}
                         <li class="nav-item">
                             <a class="nav-link"

@@ -8,22 +8,6 @@
     comment and like other posts, follow authors which posts you like.
     <br>
     Feel free to use <a href="http://jessiegram.ru">JessieGram</a>!</h4>
-<h4> 
-    "Jessiegram" – это мой мини-проект о питомцах!
-    Тут можно зарегистрировать аккаунт, создать пост со своим питомцем,
-    комментировать и лайкать посты других любителей животных.
-    Также вы можете следить за авторами, чьи посты вам нравятся.
-    <br>
-    Добро пожаловать в <a href="http://jessiegram.ru">JessieGram!</a>
-</h4>
-<h4>
-    "Jessiegram" არის Django პლატფორმაზე შექმნილი პროექტი,
-    აქ შეგიძლიათ დაარეგისტრიროთ ანგარიში, შექმნათ პოსტები თქვენს შინაურ ცხოველებთან,
-    დააკომენტაროთ და მოიწონოთ სხვა ცხოველების მოყვარულთა პოსტები.
-    თქვენ ასევე შეგიძლიათ თვალი ადევნოთ იმ ავტორებს, რომელთა პოსტებიც მოგწონთ.
-    <br>
-    კეთილი იყოს თქვენი მობრძანება <a href="http://jessiegram.ru">Jessiegram!</a>
-</h4>
 
 ## Installation and usage:
 Make `.env` file based on example in `.env.example`
@@ -32,9 +16,7 @@ Put there all necessary variables for run server
 
 Simply run:
 ```bash
-git clone https://github.com/feel2code/jessiegram.git
-cd jessiegram
-chmod +x run_server.sh
+git clone https://github.com/feel2code/jessiegram.git && cd jessiegram && chmod +x run_server.sh
 ./run_server.sh
 ```
 
