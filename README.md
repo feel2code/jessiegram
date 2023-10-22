@@ -1,6 +1,6 @@
 <h1 align="center" ><a href="http://jessiegram.ru">🐕JessieGram🐈</a></h1>
 
-![Jessiegram Logo](https://repository-images.githubusercontent.com/485134292/47dc015a-961a-4592-82eb-80cbf78835a7)
+![Jessiegram Logo](https://repository-images.githubusercontent.com/485134292/07733572-d11d-4641-8204-39c5aaafb535)
 
 <h4>
     "Jessiegram" is my pet-project about our pets!
