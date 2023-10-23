@@ -29,6 +29,11 @@ docker pull feel2code/jessiegram:latest && docker run --env-file .env -d -p 80:8
     <a href="http://https://getbootstrap.com/"><img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" style="height: 40px" alt="bootstrap technology"/></a>
     <a href="https://develop.spacemacs.org"><img alt="Developed with Spacemacs" src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" style="height:37px"/></a>
     <br>
+    <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="Sqlite">
+    <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+    <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
+    <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+    <br>
     <img src="https://img.shields.io/github/license/feel2code/jessiegram?style=for-the-badge&logo=appveyor" alt="LICENSE">
     <img src="https://img.shields.io/badge/python-3.11-green?style=for-the-badge&logo=appveyor" alt="Python Version">
     <img src="https://img.shields.io/github/issues/feel2code/jessiegram?style=for-the-badge&logo=appveyor" alt="Issues">
@@ -38,3 +43,4 @@ docker pull feel2code/jessiegram:latest && docker run --env-file .env -d -p 80:8
     <img src="https://img.shields.io/github/contributors/feel2code/jessiegram?style=for-the-badge&logo=appveyor" alt="Contributors">
     <br>
 </p>
+
