@@ -1,0 +1,13 @@
+[Unit]
+Description=Jessiegram web docker container service
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a <container> 
+ExecStop=/usr/bin/docker stop -t 10 <container>
+
+[Install]
+WantedBy=multi-user.target
+
