@@ -1,12 +1,8 @@
-<h1 align="center" ><a href="http://jessiegram.ru">🐕JessieGram🐈</a></h1>
+<h1 align="center" ><a href="https://github.com/feel2code/jessiegram">🐕JessieGram🐈</a></h1>
 
 ![Jessiegram Logo](https://repository-images.githubusercontent.com/485134292/07733572-d11d-4641-8204-39c5aaafb535)
 
-**Jessiegram** is my study-pet-project about pets!
-It's a free to signup, you can create posts with your pets,
-comment and like other posts, follow authors which posts you like.
-
-Feel free to use <a href="http://jessiegram.ru">JessieGram</a>!
+**Jessiegram** is my study-pet-project about pets developed on Django.
 
 ## Installation and usage:
 Make `.env` file based on example in `.env.example`
