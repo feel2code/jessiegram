@@ -35,7 +35,6 @@ docker pull feel2code/jessiegram:latest && docker run --env-file .env -d -p 80:8
     <br>
     <img src="https://img.shields.io/github/stars/feel2code/jessiegram?style=for-the-badge&logo=appveyor" alt="Stars">
     <img src="https://img.shields.io/github/repo-size/feel2code/jessiegram?style=for-the-badge&logo=appveyor" alt="Repository Size">
-    <img src="https://img.shields.io/github/contributors/feel2code/jessiegram?style=for-the-badge&logo=appveyor" alt="Contributors">
     <br>
 </p>
 
